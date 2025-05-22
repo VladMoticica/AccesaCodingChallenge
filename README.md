@@ -1,0 +1,2 @@
+# AccesaCodingChallenge
+Java, Gradle, IntelliJ
