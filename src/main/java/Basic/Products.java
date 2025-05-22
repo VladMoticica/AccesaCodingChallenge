@@ -1,6 +1,7 @@
 package Basic;
 
-public class Products {
+public class Products
+{
     private String P_product_id;
     private String P_product_name;
     private String P_product_category;
@@ -9,7 +10,7 @@ public class Products {
     private String P_package_unit;
     private Float P_price;
     private String P_currency;
-    
+
     public String getP_product_id() {
         return P_product_id;
     }

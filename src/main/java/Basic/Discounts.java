@@ -2,7 +2,8 @@ package Basic;
 
 import java.util.Date;
 
-public class Discounts {
+public class Discounts
+{
     private String D_product_id;
     private String D_product_name;
     private String D_brand;
@@ -12,7 +13,7 @@ public class Discounts {
     private java.util.Date D_from_date;
     private java.util.Date D_to_date;
     private int D_percentage_of_discount;
-    
+
     public String getD_product_id() {
         return D_product_id;
     }
