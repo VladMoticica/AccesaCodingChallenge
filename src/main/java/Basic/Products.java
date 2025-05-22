@@ -9,7 +9,7 @@ public class Products {
     private String P_package_unit;
     private Float P_price;
     private String P_currency;
-
+    
     public String getP_product_id() {
         return P_product_id;
     }
