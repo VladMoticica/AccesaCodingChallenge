@@ -54,12 +54,8 @@ public class DiscountsLoader {
                     d.setD_percentage_of_discount(Integer.parseInt(tokens[8]));
 
                     discountService.addDiscount(store, d);
-                } catch (Exception e) {
-                    System.err.println("Failed to parse line in " + filename + ": " + line);
-                }
+                } catch (Exception e) {}
             }
-
-            System.out.println("Loaded DISCOUNTS from: " + filename);
         }
     }
 }

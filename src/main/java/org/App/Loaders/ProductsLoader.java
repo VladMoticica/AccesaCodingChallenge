@@ -49,11 +49,8 @@ public class ProductsLoader {
                     p.setP_currency(tokens[7]);
 
                     productService.addProduct(store, p);
-                } catch (Exception e) {
-                    System.err.println("Failed to parse line in " + filename + ": " + line);
-                }
+                } catch (Exception e) {}
             }
-            System.out.println("Loaded PRODUCTS from: " + filename);
         }
     }
 }
