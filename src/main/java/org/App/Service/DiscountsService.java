@@ -21,18 +21,25 @@ public class DiscountsService {
     }
 
     public List<Discounts> findBestDeals() {
+        LocalDate today = LocalDate.now();
+
         return getAllDiscounts().stream()
+                .filter(d -> !d.getD_from_date().isAfter(today)) // from_date <= today
+                .filter(d -> !d.getD_to_date().isBefore(today))  // to_date >= today
                 .sorted(Comparator.comparing(Discounts::getD_percentage_of_discount).reversed())
-                .limit(10)
+                .limit(15)
                 .toList();
     }
 
     public List<Discounts> findNewDiscounts() {
         LocalDate today = LocalDate.now();
+        LocalDate yesterday = today.minusDays(1);
 
         return getAllDiscounts().stream()
-                .filter(d -> !d.getD_from_date().isAfter(today))   // from_date ≤ today
-                .filter(d -> !d.getD_to_date().isBefore(today))    // to_date ≥ today
+                .filter(d -> {
+                    LocalDate fromDate = d.getD_from_date();
+                    return fromDate.equals(today) || fromDate.equals(yesterday);
+                })
                 .sorted(Comparator.comparing(Discounts::getD_from_date).reversed()) // most recent first
                 .toList();
     }
