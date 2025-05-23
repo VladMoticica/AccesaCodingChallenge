@@ -54,7 +54,7 @@ public class DiscountsLoader {
                     d.setD_percentage_of_discount(Integer.parseInt(tokens[8]));
 
                     discountService.addDiscount(store, d);
-                } catch (Exception e) {}
+                } catch (Exception ignored) {}
             }
         }
     }

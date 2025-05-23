@@ -49,7 +49,7 @@ public class ProductsLoader {
                     p.setP_currency(tokens[7]);
 
                     productService.addProduct(store, p);
-                } catch (Exception e) {}
+                } catch (Exception ignored) {}
             }
         }
     }
