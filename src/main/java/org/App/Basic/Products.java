@@ -1,4 +1,4 @@
-package Basic;
+package org.App.Basic;
 
 public class Products
 {
