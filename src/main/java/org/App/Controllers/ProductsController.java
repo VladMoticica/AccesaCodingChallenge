@@ -26,16 +26,16 @@ public class ProductsController {
 
     @GetMapping("/p_store/{store}")
     public List<Products> getByStore(@PathVariable String store) {
-        return serviceP.getProductsByStore(store);
-    }
+                return serviceP.getProductsByStore(store);
+            }
 
-    @GetMapping("/categories")
-    public Set<String> getAllCategories() {
-        return serviceP.getAllCategories();
-    }
+            @GetMapping("/categories")
+            public Set<String> getAllCategories() {
+                return serviceP.getAllCategories();
+            }
 
-    @GetMapping("/category/{category}")
-    public List<Products> getByCategory(@PathVariable String category) {
-        return serviceP.getProductsByCategory(category);
-    }
-}
+            @GetMapping("/category/{category}")
+            public List<Products> getByCategory(@PathVariable String category) {
+                return serviceP.getProductsByCategory(category);
+            }
+        }

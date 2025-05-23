@@ -1,0 +1,21 @@
+product_id;product_name;product_category;brand;package_quantity;package_unit;price;currency
+P002;sana;lactate;Napolact;0.33;l;3.99;RON
+P005;smântână fermentată;lactate;Hochland;0.2;kg;4.49;RON
+P008;mozzarella răzuită;lactate;Galbani;0.2;kg;9.90;RON
+P011;baghetă albă rustică;panificație;365;300;g;3.49;RON
+P015;castraveți cornichon murați;conserve;Bunica;0.7;kg;6.99;RON
+P020;salam de vară;mezeluri;CrisTim;0.5;kg;18.90;RON
+P026;gogoșari în oțet;conserve;Gusturi Românești;0.8;kg;12.90;RON
+P032;apă minerală naturală;băuturi;Aqua Carpatica;2;l;4.20;RON
+P037;penne rigate;paste făinoase;Băneasa;500;g;4.30;RON
+P043;orez prefiert;alimente de bază;Uncle Ben's;1;kg;8.99;RON
+P048;miere polifloră;alimente de bază;Apisrom;0.4;kg;13.50;RON
+P054;napolitane cu cacao;gustări;Joe;0.18;kg;3.99;RON
+P060;ceai verde cu iasomie;ceai;Fares;0.03;kg;6.50;RON
+P066;pastă de dinți whitening;îngrijire personală;Colgate;100;ml;9.90;RON
+P072;gel de duș fresh;îngrijire personală;Dove;250;ml;12.30;RON
+P078;detergent universal capsule;produse de menaj;Persil;0.6;kg;34.90;RON
+P084;săpun lichid antibacterian;îngrijire personală;Dettol;300;ml;11.40;RON
+P089;vin alb sec;băuturi;Domeniile Sâmburești;0.75;l;23.90;RON
+P095;piper alb boabe;condimente;Cosmin;50;g;5.60;RON
+P099;ciocolată cu alune întregi;gustări;Lindt;0.1;kg;8.90;RON

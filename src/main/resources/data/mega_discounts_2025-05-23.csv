@@ -1,0 +1,11 @@
+product_id;product_name;brand;package_quantity;package_unit;product_category;from_date;to_date;percentage_of_discount
+P002;sana 3.5% grăsime;Napolact;0.33;l;lactate;2025-06-08;2025-06-14;5
+P008;mozzarella răzuită;Galbani;0.2;kg;lactate;2025-06-01;2025-06-05;12
+P015;castraveți cornichon murați;Bunica;0.7;kg;conserve;2025-05-30;2025-06-06;8
+P020;salam de vară;CrisTim;0.5;kg;mezeluri;2025-06-17;2025-06-18;20
+P026;gogoșari în oțet;Gusturi Românești;0.8;kg;conserve;2025-05-29;2025-06-01;7
+P032;apă minerală naturală;Aqua Carpatica;2;l;băuturi;2025-06-07;2025-06-16;7
+P054;napolitane cu cacao;Joe;0.18;kg;gustări;2025-06-11;2025-06-19;12
+P060;ceai verde cu iasomie;Fares;0.03;kg;ceai;2025-06-08;2025-06-13;10
+P066;pastă de dinți whitening;Colgate;100;ml;îngrijire personală;2025-05-24;2025-06-02;15
+P078;detergent universal capsule;Persil;0.6;kg;produse de menaj;2025-05-23;2025-05-24;5
