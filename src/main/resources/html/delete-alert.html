@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Delete Alert</title>
+</head>
+  <body>
+  <h1>Delete Price Alert</h1>
+    <form method="post" action="/alerts/delete">
+      <label>Product ID:
+        <input type="text" name="productId" required>
+      </label><br><br>
+
+      <label>. Target Price (optional):
+        <input type="number" name="targetPrice" step="0.01"><br><br>
+      </label>
+
+      <button type="submit">Delete Alert</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Price Alert</title>
+</head>
+    <body>
+    <h1>Add Price Alert</h1>
+        <form method="post" action="/alerts/add">
+            <label>Product ID:
+                <input type="text" name="productId" required>
+            </label><br><br>
+
+            <label>Target Price:
+                <input type="number" name="targetPrice" step="0.01" required>
+            </label><br><br>
+
+            <button type="submit">Add Alert</button>
+        </form>
+    </body>
+</html>
