@@ -33,7 +33,7 @@ public class DiscountsController {
         return serviceD.findNewDiscounts();
     }
 
-    @GetMapping("/d_store/{store}")
+    @GetMapping("/store/{store}")
     public List<Discounts> getDByStore(@PathVariable String store) {
         return serviceD.getDiscountsByStore(store);
     }
