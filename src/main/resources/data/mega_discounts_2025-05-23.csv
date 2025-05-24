@@ -1,11 +1,11 @@
 product_id;product_name;brand;package_quantity;package_unit;product_category;from_date;to_date;percentage_of_discount
-P002;sana 3.5% grăsime;Napolact;0.33;l;lactate;2025-06-08;2025-06-14;5
-P008;mozzarella răzuită;Galbani;0.2;kg;lactate;2025-06-01;2025-06-05;12
-P015;castraveți cornichon murați;Bunica;0.7;kg;conserve;2025-05-30;2025-06-06;8
-P020;salam de vară;CrisTim;0.5;kg;mezeluri;2025-06-17;2025-06-18;20
-P026;gogoșari în oțet;Gusturi Românești;0.8;kg;conserve;2025-05-29;2025-06-01;7
-P032;apă minerală naturală;Aqua Carpatica;2;l;băuturi;2025-06-07;2025-06-16;7
-P054;napolitane cu cacao;Joe;0.18;kg;gustări;2025-06-11;2025-06-19;12
-P060;ceai verde cu iasomie;Fares;0.03;kg;ceai;2025-06-08;2025-06-13;10
-P066;pastă de dinți whitening;Colgate;100;ml;îngrijire personală;2025-05-24;2025-06-02;15
-P078;detergent universal capsule;Persil;0.6;kg;produse de menaj;2025-05-23;2025-05-24;5
+P001;lapte zuzu;Zuzu;1;l;lactate;2025-05-24;2025-06-02;8
+P027;banane;legume și fructe;Generic;1;kg;6.50;RON
+P038;detergent lichid;Ariel;2.5;l;produse de menaj;2025-06-02;2025-06-12;22
+P042;șampon păr gras;Schauma;400;ml;îngrijire personală;2025-05-25;2025-06-06;10
+P053;ciocolată neagră 70%;Heidi;100;g;gustări;2025-06-02;2025-06-03;15
+P059;morcovi;Generic;0.5;kg;legume și fructe;2025-06-09;2025-06-15;5
+P064;mălai extra;Pambac;1;kg;alimente de bază;2025-05-28;2025-06-03;5
+P093;iaurt vegetal cu cocos;Alpro;0.4;kg;lactate;2025-06-04;2025-06-09;6
+P095;cașcaval afumat;Delaco;0.3;kg;lactate;2025-06-01;2025-06-07;10
+P099;mere golden;Mega Image;1;kg;legume și fructe;2025-05-28;2025-06-05;12

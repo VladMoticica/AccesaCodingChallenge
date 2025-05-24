@@ -1,21 +1,21 @@
 product_id;product_name;product_category;brand;package_quantity;package_unit;price;currency
-P001;lapte;lactate;Zuzu;1;l;5.69;RON
-P004;iaurt grecesc cu piersici;lactate;Olympus;0.15;kg;3.99;RON
-P007;cașcaval afumat;lactate;Delaco;0.3;kg;22.90;RON
-P010;pâine integrală cu semințe;panificație;365;500;g;6.49;RON
-P014;mere golden;legume și fructe;Mega Image;1;kg;4.99;RON
-P019;piept de pui grill;carne;Mega Image;1;kg;29.90;RON
-P023;roșii cherry românești;legume și fructe;Gusturi Românești;250;g;7.49;RON
-P027;apă plată carbogazoasă;băuturi;Borsec;2;l;4.50;RON
-P033;spaghetti integrale;paste făinoase;Barilla;500;g;6.20;RON
-P038;zahăr brun nerafinat;alimente de bază;Naturalia;0.5;kg;5.20;RON
-P042;ulei de măsline extravirgin;alimente de bază;Băneasa;0.75;l;19.90;RON
-P047;ciocolată neagră cu portocale;gustări;Heidi;0.1;kg;5.99;RON
-P053;cafea boabe intens;cafea;Tchibo;0.5;kg;32.90;RON
-P059;șampon pentru păr uscat;îngrijire personală;Nivea;400;ml;18.50;RON
-P064;detergent capsule color;produse de menaj;Ariel;0.5;kg;27.90;RON
-P070;hârtie igienică reciclabilă;produse de menaj;Zewa;8;role;17.40;RON
+P001;lapte zuzu;lactate;Zuzu;1;l;8.69;RON
+P004;iaurt grecesc;lactate;Proxi;0.4;kg;9.99;RON
+P010;brânză telemea;lactate;Proxi;0.3;kg;13.00;RON
+P019;piept pui;carne;Avicola;1;kg;25.80;RON
+P023;zahăr tos;alimente de bază;Proxi;1;kg;4.40;RON
+P027;banane;legume și fructe;Generic;1;kg;6.29;RON
+P033;biscuiți cu unt;gustări;RoStar;0.2;kg;7.29;RON
+P038;detergent lichid;produse de menaj;Ariel;2.5;l;50.00;RON
+P042;șampon păr gras;îngrijire personală;Schauma;400;ml;18.00;RON
+P047;piper negru măcinat;condimente;Fuchs;50;g;6.12;RON
+P053;ciocolată neagră 70%;gustări;Heidi;100;g;4.19;RON
+P059;morcovi;legume și fructe;Generic;0.5;kg;2.45;RON
+P064;mălai extra;alimente de bază;Pambac;1;kg;5.55;RON
+P070;bere blondă;băuturi;Ursus;0.5;l;3.90;RON
 P076;vin roșu demisec;băuturi;Recaș;0.75;l;21.00;RON
 P081;sare de mare fină;alimente de bază;SanoVita;0.5;kg;2.20;RON
 P087;ardei gras galben;legume și fructe;Mega Image;1;kg;9.80;RON
 P093;iaurt vegetal cu cocos;lactate;Alpro;0.4;kg;11.90;RON
+P095;cașcaval afumat;lactate;Delaco;0.3;kg;22.90;RON
+P099;mere golden;legume și fructe;Mega Image;1;kg;4.99;RON
