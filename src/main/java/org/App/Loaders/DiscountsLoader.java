@@ -1,7 +1,7 @@
 package org.App.Loaders;
 
 import jakarta.annotation.PostConstruct;
-import org.App.Basic.Discounts;
+import org.App.Models.Discounts;
 import org.App.Service.DiscountsService;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;

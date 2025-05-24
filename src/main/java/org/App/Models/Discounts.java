@@ -1,4 +1,4 @@
-package org.App.Basic;
+package org.App.Models;
 
 import java.time.LocalDate;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;

@@ -1,6 +1,6 @@
 package org.App.Loaders;
 
-import org.App.Basic.Products;
+import org.App.Models.Products;
 import org.App.Service.ProductsService;
 import jakarta.annotation.PostConstruct;
 import org.springframework.core.io.Resource;

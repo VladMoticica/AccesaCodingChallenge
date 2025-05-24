@@ -1,4 +1,4 @@
-package org.App.Basic;
+package org.App.Models;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonProperty;

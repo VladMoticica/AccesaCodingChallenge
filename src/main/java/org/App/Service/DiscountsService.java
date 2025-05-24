@@ -1,6 +1,6 @@
 package org.App.Service;
 
-import org.App.Basic.Discounts;
+import org.App.Models.Discounts;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

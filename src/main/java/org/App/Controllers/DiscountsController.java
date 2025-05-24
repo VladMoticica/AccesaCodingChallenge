@@ -1,6 +1,6 @@
 package org.App.Controllers;
 
-import org.App.Basic.Discounts;
+import org.App.Models.Discounts;
 import org.App.Service.DiscountsService;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
