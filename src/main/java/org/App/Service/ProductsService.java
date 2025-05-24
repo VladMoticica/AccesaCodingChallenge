@@ -39,4 +39,12 @@ public class ProductsService {
                 .filter(p -> p.getP_product_category().equalsIgnoreCase(category))
                 .toList();
     }
+
+    public List<Products> findBestBuy() {
+        return getAllProducts().stream()
+                .filter(p -> p.getPricePerUnit() != null)
+                .sorted(Comparator.comparing(Products::getPricePerUnit))
+                .limit(50)
+                .toList();
+    }
 }
