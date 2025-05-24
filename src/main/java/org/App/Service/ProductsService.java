@@ -1,5 +1,6 @@
 package org.App.Service;
 
+import org.App.Models.Alerts;
 import org.App.Models.Products;
 import org.springframework.stereotype.Service;
 
@@ -46,5 +47,21 @@ public class ProductsService {
                 .sorted(Comparator.comparing(Products::getPricePerUnit))
                 .limit(50)
                 .toList();
+    }
+
+    public List<Products> getTriggeredAlerts(List<Alerts> alerts) {
+        List<Products> allProducts = getAllProducts();
+
+        List<Products> triggered = new ArrayList<>();
+
+        for (Alerts alert : alerts) {
+            allProducts.stream()
+                    .filter(p -> p.getP_product_id().equals(alert.getProductId()))
+                    .filter(p -> p.getP_price() != null && p.getP_price() <= alert.getTargetPrice())
+                    .findFirst()
+                    .ifPresent(triggered::add);
+        }
+
+        return triggered;
     }
 }
