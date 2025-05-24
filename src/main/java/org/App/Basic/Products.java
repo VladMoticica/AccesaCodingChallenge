@@ -1,6 +1,10 @@
 package org.App.Basic;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 @JsonPropertyOrder({
         "p_product_id",
@@ -86,5 +90,25 @@ public class Products
 
     public void setP_currency(String p_currency) {
         this.p_currency = p_currency;
+    }
+
+    @JsonProperty("p_price_per_unit")
+    public Float getPricePerUnit() {
+        if (p_price == null || p_package_quantity == null || p_package_unit == null || p_package_quantity <= 0) {
+            return null;
+        }
+
+        float normalizedQuantity;
+        switch (p_package_unit.toLowerCase()) {
+            case "kg", "l" -> normalizedQuantity = p_package_quantity * 1000;
+            case "g", "ml", "buc" -> normalizedQuantity = p_package_quantity;
+            default -> normalizedQuantity = 0;
+        }
+
+        if (normalizedQuantity <= 0) return null;
+        float rawValue = p_price / normalizedQuantity;
+
+        BigDecimal rounded = new BigDecimal(rawValue).setScale(4, RoundingMode.HALF_UP);
+        return rounded.floatValue();
     }
 }
