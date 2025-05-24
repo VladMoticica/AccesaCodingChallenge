@@ -33,9 +33,8 @@ public class HomeController {
                 <p><b>localhost:8080/add-alert.html</b>  -  fill in the form to add new alert</p>
                 <p><b>localhost:8080/delete-alert.html</b>  -  fill in the form to delete existing alert</p>
                 <p><b>localhost:8080/alerts/triggered</b>  -  lists all triggered alerts, based on the targetPrice you set</p>
-                <hr></hr>
             </body>
             </html>
-       \s""";
+       """;
     }
 }
