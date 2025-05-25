@@ -1,12 +1,12 @@
 # Accesa Coding Challenge - Price Comparator Backend
 
 ## Tools
-IDE: IntelliJ
-Language: Java (OpenJDK 17.0.15)
-Builder: Gradle (Kotlin)
-Framework: Spring Boot
-CSVs: BufferedReader, no libs
-"Frontend": HTML, Javascript
+IDE: IntelliJ<br>
+Language: Java (OpenJDK 17.0.15)<br>
+Builder: Gradle (Kotlin)<br>
+Framework: Spring Boot<br>
+CSVs: BufferedReader, no libs<br>
+"Frontend": HTML, Javascript<br>
 
 
 ## Structure
