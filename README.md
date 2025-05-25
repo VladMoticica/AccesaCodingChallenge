@@ -54,7 +54,7 @@ src/
         add-alert.html
         basket.html
         delete-alert.html
-
+        
 
 # Instructions
 1. Go to the "master" branch, click on "Code", and then "Download ZIP"
