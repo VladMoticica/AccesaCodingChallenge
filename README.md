@@ -1,1 +1,1 @@
-Go to "master" tab for detailed README and code.
+Go to "master" branch for detailed README and code.
