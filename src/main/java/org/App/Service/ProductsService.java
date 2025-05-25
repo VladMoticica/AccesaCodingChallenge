@@ -64,4 +64,31 @@ public class ProductsService {
 
         return triggered;
     }
+
+    public List<Products> findCheapestPerProduct(List<String> productIds) {
+        if (productIds == null || productIds.isEmpty()) {
+            return Collections.emptyList();
+        }
+
+        List<Products> allProducts = getAllProducts();
+
+        return productIds.stream()
+                .distinct()  // Remove duplicates if same product is selected multiple times
+                .map(pid -> allProducts.stream()
+                        .filter(p -> pid.equals(p.getP_product_id()))
+                        .min(Comparator.comparing(Products::getP_price))
+                        .orElse(null))
+                .filter(Objects::nonNull)
+                .toList();
+    }
+
+    public float calculateTotal(List<Products> cheapestProducts) {
+        if (cheapestProducts == null || cheapestProducts.isEmpty()) {
+            return 0.0f;
+        }
+
+        return (float) cheapestProducts.stream()
+                .mapToDouble(Products::getP_price)
+                .sum();
+    }
 }
