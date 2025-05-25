@@ -1,4 +1,4 @@
-# Accesa Coding Challenge - Price Comparator Backend
+# Price Comparator App Backend
 
 ## Tools
 IDE: IntelliJ<br>
