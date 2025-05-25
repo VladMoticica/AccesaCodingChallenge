@@ -10,10 +10,8 @@ CSVs: BufferedReader, no libs
 
 
 ## Structure
-# Project Structure
-
 src/<br>
- ├── main/<br>
+ ├── main/<br>
  │  ├── java/<br>
  │  │  └── org.App/<br>
  │  │    ├── Controllers/<br>
@@ -56,7 +54,7 @@ src/<br>
  │      ├── add-alert.html<br>
  │      ├── basket.html<br>
  │      └── delete-alert.html<br>
- └────/ 
+ └────/ 
  
 
 # Instructions
