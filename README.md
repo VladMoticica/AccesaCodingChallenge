@@ -65,7 +65,7 @@ src/<br>
 5. Click "Load" in the bottom-right corner when prompted to load gradle build files
 6. Navigate to "src/main/java/org.App/Main" and click "Run" (green arrow)
 7. Go To: "http://localhost:8080/home"
-8. Take a look at all the available addresses, copy any of them into your search bar to navigate them
+8. Take a look at all the available addresses, copy any of them into your search bar to navigate them<br>
 Note: for "localhost:8080/products/store/{storeName}", you replace {storeName} with one of the options: lidl/kaufland/profi/mega, same thing with {categoryName}.
 
 
