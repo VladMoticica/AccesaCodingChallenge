@@ -55,7 +55,6 @@ src/
 │           ├── add-alert.html
 │           ├── basket.html
 │           └── delete-alert.html
-└─────/
 
 
 # Instructions
