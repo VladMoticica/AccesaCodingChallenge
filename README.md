@@ -13,6 +13,9 @@ CSVs: BufferedReader, no libs
 src/
   main/
     java/
+
+  main/
+    java/
       org.App/
         Controllers/
           AlertsController
