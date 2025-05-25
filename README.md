@@ -58,7 +58,7 @@ src/<br>
  
 
 # Instructions
-1. Make sure you are in the "master" branch, click on "Code", and then "Download ZIP"
+1. You are in the "master" branch, click on "Code", and then "Download ZIP"
 2. Unzip the file, right-click the folder and select "Open Folder as IntelliJ IDEA Project"
 3. Click "Trust Project" on the pop-up
 4. Click "SetupSDK" in the top-right corner on the yellow ribbon, and select "ms-17" (OpenJDK 17)
