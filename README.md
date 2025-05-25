@@ -10,50 +10,52 @@ CSVs: BufferedReader, no libs
 
 
 ## Structure
-src/ 
-  main/ 
-    java/ 
-      org.App/ 
-        Controllers/ 
-          AlertsController 
-          BasketController 
-          DiscountsController 
-          HomeController 
-          ProductsController 
-        Loaders/ 
-          DiscountsLoader 
-          ProductsLoader 
-        Models/ 
-          Alerts 
-          Discounts 
-          Products 
-        Service/ 
-          AlertsService 
-          DiscountsService 
-          ProductsService 
-        Main 
-    resources/ 
-      data/ 
-        kaufland_2025-05-01.csv 
-        kaufland_2025-05-08.csv 
-        kaufland_discounts_2025-05-01.csv 
-        kaufland_discounts_2025-05-08.csv 
-        lidl_2025-05-01.csv 
-        lidl_2025-05-08.csv 
-        lidl_discounts_2025-05-01.csv 
-        lidl_discounts_2025-05-08.csv 
-        mega_2025-05-20.csv 
-        mega_2025-05-23.csv 
-        mega_discounts_2025-05-20.csv 
-        mega_discounts_2025-05-23.csv 
-        profi_2025-05-01.csv 
-        profi_2025-05-08.csv 
-        profi_discounts_2025-05-01.csv 
-        profi_discounts_2025-05-08.csv 
-      static/ 
-        add-alert.html 
-        basket.html 
-        delete-alert.html
+# Project Structure
+
+src/<br>
+ ├── main/<br>
+ │  ├── java/<br>
+ │  │  └── org.App/<br>
+ │  │    ├── Controllers/<br>
+ │  │    │  ├── AlertsController<br>
+ │  │    │  ├── BasketController<br>
+ │  │    │  ├── DiscountsController<br>
+ │  │    │  ├── HomeController<br>
+ │  │    │  └── ProductsController<br>
+ │  │    ├── Loaders/<br>
+ │  │    │  ├── DiscountsLoader<br>
+ │  │    │  └── ProductsLoader<br>
+ │  │    ├── Models/<br>
+ │  │    │  ├── Alerts<br>
+ │  │    │  ├── Discounts<br>
+ │  │    │  └── Products<br>
+ │  │    ├── Service/<br>
+ │  │    │  ├── AlertsService<br>
+ │  │    │  ├── DiscountsService<br>
+ │  │    │  └── ProductsService<br>
+ │  │    └── Main<br>
+ │  └── resources/<br>
+ │    ├── data/<br>
+ │    │  ├── kaufland_2025-05-01.csv<br>
+ │    │  ├── kaufland_2025-05-08.csv<br>
+ │    │  ├── kaufland_discounts_2025-05-01.csv<br>
+ │    │  ├── kaufland_discounts_2025-05-08.csv<br>
+ │    │  ├── lidl_2025-05-01.csv<br>
+ │    │  ├── lidl_2025-05-08.csv<br>
+ │    │  ├── lidl_discounts_2025-05-01.csv<br>
+ │    │  ├── lidl_discounts_2025-05-08.csv<br>
+ │    │  ├── mega_2025-05-20.csv<br>
+ │    │  ├── mega_2025-05-23.csv<br>
+ │    │  ├── mega_discounts_2025-05-20.csv<br>
+ │    │  ├── mega_discounts_2025-05-23.csv<br>
+ │    │  ├── profi_2025-05-01.csv<br>
+ │    │  ├── profi_2025-05-08.csv<br>
+ │    │  ├── profi_discounts_2025-05-01.csv<br>
+ │    │  └── profi_discounts_2025-05-08.csv<br>
+ │    └── static/<br>
+ │      ├── add-alert.html<br>
+ │      ├── basket.html<br>
+ │      └── delete-alert.html
         
 
 # Instructions
