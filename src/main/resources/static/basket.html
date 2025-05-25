@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Your Basket</title>
+  <style>
+    .product-item { margin: 5px 0; }
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .product-card {
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #eee;
+      background-color: white;
+    }
+    .cheapest { color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+<h1>Create Your Basket</h1>
+<form id="basket-form">
+  <div id="product-list"></div>
+  <br>
+  <button type="submit">Optimize</button>
+</form>
+
+<div id="result" style="display: none;">
+  <h2>Optimization Result</h2>
+  <p>Total Cost: <span id="total-cost" style="font-weight: bold;"></span> RON</p>
+  <h3>Recommended Products (Cheapest Options):</h3>
+  <div id="recommended-products"></div>
+</div>
+
+<script>
+  fetch("/products")
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById("product-list");
+      container.innerHTML = "";
+
+      data.forEach(p => {
+        const div = document.createElement("div");
+        div.className = "product-item";
+        div.innerHTML = `
+          <label>
+            <input type="checkbox" value="${p.p_product_id}">
+            ${p.p_product_name} (ID: ${p.p_product_id}) - ${p.p_price} ${p.p_currency}
+          </label>
+        `;
+        container.appendChild(div);
+      });
+    });
+
+  document.getElementById("basket-form").onsubmit = async function (e) {
+    e.preventDefault();
+    const selected = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+      .map(cb => cb.value);
+
+    if (selected.length === 0) {
+      alert("Please select at least one product");
+      return;
+    }
+
+    try {
+      const res = await fetch("/basket/optimize", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(selected)
+      });
+
+      const result = await res.json();
+
+      document.getElementById("total-cost").textContent = result.totalCost;
+
+      const productsContainer = document.getElementById("recommended-products");
+      productsContainer.innerHTML = "";
+
+      result.recommendedSplit.forEach(product => {
+        const productCard = document.createElement("div");
+        productCard.className = "product-card";
+        productCard.innerHTML = `
+          <strong>${product.p_product_name}</strong><br>
+          <span>ID: ${product.p_product_id}</span><br>
+          <span>Price: ${product.p_price} ${product.p_currency}</span>
+        `;
+        productsContainer.appendChild(productCard);
+      });
+
+      document.getElementById("result").style.display = "block";
+    } catch (error) {
+      console.error("Error optimizing basket:", error);
+      alert("An error occurred while optimizing your basket");
+    }
+  };
+</script>
+</body>
+</html>
