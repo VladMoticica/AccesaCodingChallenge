@@ -12,7 +12,7 @@ public class HomeController {
             <!DOCTYPE html>
             <html>
             <head>
-                <title>Price Comparator - Market</title>
+                <title>Home - Price Comparator</title>
             </head>
             <body>
                 <h1>Home Page (localhost:8080/home)</h1>
@@ -21,7 +21,7 @@ public class HomeController {
                 <p><b>localhost:8080/products</b>  -  lists all products available</p>
                 <p><b>localhost:8080/products/store/{storeName}</b>  -  lists all products from a certain store; storeName options: lidl/kaufland/profi/mega</p>
                 <p><b>localhost:8080/products/categories</b>  -  lists all categories of products available</p>
-                <p><b>localhost:8080/products/category/{categoryName}</b>  -  lists all products under a certain category; categoryName examples: carne/lactate/ouă/băuturi etc. (see above address for full list)</p>
+                <p><b>localhost:8080/products/category/{categoryName}</b>  -  lists all products under a certain category; categoryName examples: carne/băuturi etc. (see above address for full list)</p>
                 <p><b>localhost:8080/products/best</b>  -  lists best buy products by calculating the value per unit for each product</p>
                 <hr></hr>
                 <p><b>localhost:8080/discounts</b>  -  lists all discounts available</p>
@@ -31,8 +31,10 @@ public class HomeController {
                 <hr></hr>
                 <p><b>localhost:8080/alerts</b>  -  lists all set product alerts</p>
                 <p><b>localhost:8080/add-alert.html</b>  -  fill in the form to add new alert</p>
-                <p><b>localhost:8080/delete-alert.html</b>  -  fill in the form to delete existing alert</p>
+                <p><b>localhost:8080/delete-alert.html</b>  -  fill in the form to delete existing alert(s)</p>
                 <p><b>localhost:8080/alerts/triggered</b>  -  lists all triggered alerts, based on the targetPrice you set</p>
+                <hr></hr>
+                <p><b>localhost:8080/basket.html</b>  -  create basket by checking products, click Optimize to get the cheapest price optimization for the selected products</p>
             </body>
             </html>
        """;
