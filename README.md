@@ -13,7 +13,7 @@ CSVs: BufferedReader, no libs
 # Project Structure
 
 src/<br>
- ├── main/<br>
+ ├── main/<br>
  │  ├── java/<br>
  │  │  └── org.App/<br>
  │  │    ├── Controllers/<br>
@@ -55,8 +55,9 @@ src/<br>
  │    └── static/<br>
  │      ├── add-alert.html<br>
  │      ├── basket.html<br>
- │      └── delete-alert.html
-        
+ │      └── delete-alert.html<br>
+ └────/ 
+ 
 
 # Instructions
 1. Go to the "master" branch, click on "Code", and then "Download ZIP"
